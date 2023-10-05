@@ -1,0 +1,77 @@
+.drawer {
+  width: 33%;
+  background-color: var(--bs-white);
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.dtitle {
+  position: sticky;
+  top: 0;
+  background-color: var(--bs-white);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  z-index: 9999;
+  font-size: medium;
+}
+
+.actions {
+  position: sticky;
+  bottom: 0;
+  background-color: var(--bs-white);
+}
+
+.close-icon:hover {
+  cursor: pointer !important;
+  color: var(--bs-danger) !important;
+}
+
+.dbody {
+  height: 90%;
+  overflow-y: auto;
+}
+
+.dbody::-webkit-scrollbar {
+  background: transparent !important;
+  width: 0.6rem !important;
+}
+
+.dbody::-webkit-scrollbar-thumb {
+  background: var(--bs-gray-400) !important;
+  border-radius: 0.25em;
+}
+.dbody::-webkit-scrollbar-thumb:hover {
+  background: var(--bs-gray-600) !important;
+}
+@media screen and (max-width: 800px) {
+  .drawer {
+    width: 100%;
+  }
+}
+// @keyframes drawerTransitionEnter {
+//   0% {
+//     opacity: 0;
+//     right: -50%;
+//   }
+//   100% {
+//     opacity: 1;
+//     right: 0;
+//   }
+// }
+
+// @keyframes drawerTransitionExit {
+//   0% {
+//     opacity: 1;
+//     right: 0;
+//   }
+//   100% {
+//     opacity: 0;
+//     right: -50%;
+//   }
+// }
